@@ -4,6 +4,7 @@ Strongly influenced by:
 
 - Great designer Brad Frost coined [Atomic Design](http://bradfrost.com/blog/post/atomic-web-design/)
 - GE adopted Atomic Design for the enterprise domain with its [Predix DLS](https://medium.com/ge-design/ges-predix-design-system-8236d47b0891#.wzq2vd2wz)
+- How Nordnet is adopting it and [open sourced it](https://medium.com/nordnet-design-studio/an-atomic-workflow-for-design-development-at-nordnet-e91c815428b6#.95l19v48c)
 - On how [Airbnb build their DLS](http://airbnb.design/building-a-visual-language/)
 
 The visual is align with Microsoft Azure UI guideline:
