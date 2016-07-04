@@ -7,10 +7,6 @@ Strongly influenced by:
 - How Nordnet is adopting it and [open sourced it](https://medium.com/nordnet-design-studio/an-atomic-workflow-for-design-development-at-nordnet-e91c815428b6#.95l19v48c)
 - On how [Airbnb build their DLS](http://airbnb.design/building-a-visual-language/)
 
-The visual is align with Microsoft Azure UI guideline:
-
-- *Internal* [Azure UX Design Inventory](http://azureux.azurewebsites.net/Prototype/?s=guidance#Guidance_DesignInventory/)
-
 ## The Structure of OPS Design Language System
 
 ### Principles
@@ -47,3 +43,14 @@ The visual is align with Microsoft Azure UI guideline:
 - Manage user accounts and permissions
 - First time user experience
 - ...
+
+## Visual
+
+The visual is align with Microsoft Azure UI guideline:
+
+- *Internal* [Azure UX Design Inventory](http://azureux.azurewebsites.net/Prototype/?s=guidance#Guidance_DesignInventory/)
+
+### Color palette
+
+[Azure colors](http://azureux.azurewebsites.net/Prototype/?s=guidance#Guidance_DesignInventory/DesignInventory-Styles-Colors)
+
