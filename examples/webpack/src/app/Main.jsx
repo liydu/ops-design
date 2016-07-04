@@ -1,7 +1,10 @@
 import React from 'react';
+import ThemeProvider from 'ops-design/themes/ThemeProvider';
 
 const Main = () => (
-  <div className="main">hello world.</div>
+  <ThemeProvider>
+    <div className="main">hello world.</div>
+  </ThemeProvider>
 );
 
 export default Main;

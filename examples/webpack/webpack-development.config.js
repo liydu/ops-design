@@ -1,13 +1,10 @@
 const path = require('path');
 const buildPath = path.resolve(__dirname, 'build');
 const nodeModulesPath = path.resolve(__dirname, 'node_modules');
-const webpack = require('webpack');
 const TransferWebpackPlugin = require('transfer-webpack-plugin');
 
 const config = {
   entry: [
-    'webpack/hot/dev-server',
-    'webpack/hot/only-dev-server',
     path.join(__dirname, '/src/app/app.js'),
   ],
   devtool: 'eval',
@@ -19,32 +16,29 @@ const config = {
     loaders: [
       {
         test: /\.(js|jsx)$/,
-        loaders: ['react-hot', 'babel-loader'],
         exclude: [nodeModulesPath],
+        loaders: ['babel'],
       },
     ],
   },
-  // Omit .jsx in React files
+  // Omit .jsx extension when including in React files
   resolve: {
     extensions: ['', '.js', '.jsx'],
   },
   plugins: [
-    // Enables Hot Modules Replacement
-    new webpack.HotModuleReplacementPlugin(),
-    // Allows error warnings but does not stop compiling.
-    new webpack.NoErrorsPlugin(),
     // Moves files
     new TransferWebpackPlugin([
-      {from: 'static'},
+      { from: 'static' },
     ], path.resolve(__dirname, 'src')),
   ],
   // Dev server configurations
   devServer: {
+    colors: true,
     contentBase: 'src/static', // Relative directory for base of server
-    devTool: 'eval', // Live-reload
-    hot: true,
-    port: 3000,
+    devtool: 'eval',
+    historyApiFallback: true,
     host: 'localhost', // Change to '0.0.0.0' for external facing server
+    port: 3000,
   },
 };
 

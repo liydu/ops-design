@@ -1,4 +1,5 @@
 import { Component, PropTypes } from 'react';
+import getTheme from './getTheme';
 
 class ThemeProvider extends Component {
   static propTypes = {
