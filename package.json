@@ -11,7 +11,8 @@
     "build": "npm run build:babel && npm run build:copy-files",
     "build:babel": "babel ./src --ignore *.spec.js --out-dir ./build",
     "build:copy-files": "babel-node ./scripts/copy-files.js",
-    "test": "cross-env NODE_ENV=test mocha --compilers js:babel-core/register src/**/*.spec.js"
+    "test": "cross-env NODE_ENV=test mocha --compilers js:babel-core/register src/**/*.spec.js",
+    "test:watch": "npm run test --watch"
   },
   "repository": {
     "type": "git",
